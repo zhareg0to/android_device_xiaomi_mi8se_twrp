@@ -1,4 +1,5 @@
 # Inherit from the common Open Source product configuration
+$(call inherit-product, device/xiaomi/mi8se/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Device identifier. This must come after all inclusions
