@@ -2,6 +2,14 @@
 $(call inherit-product, device/xiaomi/mi8se/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Release name
+PRODUCT_RELEASE_NAME := mi8se
+
+$(call inherit-product, build/target/product/embedded.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_mi8se
 PRODUCT_DEVICE := mi8se
@@ -23,4 +31,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 TARGET_VENDOR_PRODUCT_NAME := mi8se
 TARGET_VENDOR_DEVICE_NAME := mi8se
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=mi8se PRODUCT_NAME=mi8se
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=mi8se \
+                                BUILD_PRODUCT=mi8se \
+                                PRODUCT_NAME=mi8se
