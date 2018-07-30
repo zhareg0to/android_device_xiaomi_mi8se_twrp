@@ -20,8 +20,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/etc/recovery.fstab:etc/recovery.fstab
 
 # adbd
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/sbin/adbd:system/bin/adbd
+# PRODUCT_COPY_FILES += \
+#    $(DEVICE_PATH)/sbin/adbd:system/bin/adbd
 
 
     
