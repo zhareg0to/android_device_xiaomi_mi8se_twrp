@@ -23,6 +23,10 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
+# Add Env Variable
+LC_ALL := C
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -55,9 +59,6 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_PREBUILT_KERNEL := device/xiaomi/mi8se/Image.gz-dtb
-
-# Copy Files
-# PRODUCT_COPY_FILES 
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
