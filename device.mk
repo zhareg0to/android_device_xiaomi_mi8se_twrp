@@ -15,18 +15,13 @@
 # Device path
 DEVICE_PATH := device/xiaomi/mi8se/recovery/root
 
-# Target out
-TARGET_COPY_OUT := out/target/product/mi8se
-
 # recovery.fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/etc/recovery.fstab:etc/recovery.fstab
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/etc/recovery.fstab:$(TARGET_COPY_OUT)/etc/recovery.fstab
 
 # adbd
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/sbin/adbd:$(TARGET_COPY_OUT)/system/bin/adbd
+    $(DEVICE_PATH)/sbin/adbd:system/bin/adbd
 
 
     
