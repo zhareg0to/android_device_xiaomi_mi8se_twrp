@@ -20,6 +20,8 @@ TARGET_COPY_OUT := out/target/product/mi8se
 
 # recovery.fstab
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/etc/recovery.fstab:etc/recovery.fstab
+PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/etc/recovery.fstab:$(TARGET_COPY_OUT)/etc/recovery.fstab
 
 # adbd
