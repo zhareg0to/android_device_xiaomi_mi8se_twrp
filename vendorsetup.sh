@@ -16,3 +16,10 @@
 
 add_lunch_combo omni_mi8se-eng
 add_lunch_combo omni_mi8se-userdebug
+
+# Avoid Error 
+mkdir -p out/target/product/mi8se/system/bin
+mkdir -p out/target/product/mi8se/system/lib64
+cp device/xiaomi/mi8se/recovery/root/vendor/lib64/libcryptfs_hw.so out/target/product/mi8se/system/lib64/libcryptfs_hw.so
+cp device/xiaomi/mi8se/recovery/root/sbin/adbd out/target/product/mi8se/system/bin/adbd
+
