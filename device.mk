@@ -19,6 +19,8 @@ TARGET_OUT_SYSTEM := out/target/product/mi8se/system
 # recovery.fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/etc/recovery.fstab:etc/recovery.fstab
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/etc/twrp.fstab:etc/twrp.fstab
 
 # libcryptfs_hw.so
  PRODUCT_COPY_FILES += \
