@@ -22,11 +22,11 @@ PRODUCT_COPY_FILES += \
 
 # libcryptfs_hw.so
  PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/lib64/libcryptfs_hw.so:($TARGET_OUT_SYSTEM)/lib64/libcryptfs_hw.so
+    $(DEVICE_PATH)/vendor/lib64/libcryptfs_hw.so:$(TARGET_OUT_SYSTEM)/lib64/libcryptfs_hw.so
 
 # adbd
  PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/sbin/adbd:($TARGET_OUT_SYSTEM)/bin/adbd
+    $(DEVICE_PATH)/sbin/adbd:$(TARGET_OUT_SYSTEM)/bin/adbd
 
 
     
