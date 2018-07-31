@@ -86,6 +86,7 @@ BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 
