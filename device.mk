@@ -14,14 +14,19 @@
 
 # Device path
 DEVICE_PATH := device/xiaomi/mi8se/recovery/root
+TARGET_OUT_SYSTEM := out/target/product/mi8se/system
 
 # recovery.fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/etc/recovery.fstab:etc/recovery.fstab
 
+# libcryptfs_hw.so
+ PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/lib64/libcryptfs_hw.so:($TARGET_OUT_SYSTEM)/lib64/libcryptfs_hw.so
+
 # adbd
-# PRODUCT_COPY_FILES += \
-#    $(DEVICE_PATH)/sbin/adbd:system/bin/adbd
+ PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/sbin/adbd:($TARGET_OUT_SYSTEM)/bin/adbd
 
 
     
