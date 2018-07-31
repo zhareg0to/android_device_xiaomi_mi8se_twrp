@@ -26,7 +26,6 @@
 # Add Env Variable
 LC_ALL := C
 ALLOW_MISSING_DEPENDENCIES := true
-QCOM_BOARD_PLATFORMS += sdm710
 
 # Architecture
 TARGET_ARCH := arm64
